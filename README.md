@@ -1,4 +1,4 @@
-# React Challenge - Eliâ Melfior's changes!
+# React Redux Calendar Features:
 
 - The features that were implemented:
 - Reminder system which shows the reminders when you click on a day in the calendar.
