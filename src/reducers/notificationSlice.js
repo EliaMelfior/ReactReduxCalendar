@@ -52,7 +52,6 @@ export const notificationSlice = createSlice({
 
             state.notificationModalState = false;
             state.isEditing = true;
-            state.editingCity = state.reminderToEdit.payload.city;
             state.editinDate = state.reminderToEdit.payload.date;
             state.editingDescription = state.reminderToEdit.payload.description;
             state.notificationCreationModalState = true;

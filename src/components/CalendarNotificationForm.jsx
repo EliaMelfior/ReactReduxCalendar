@@ -64,7 +64,6 @@ export default function CalendarNotificationForm() {
         let notificationObj = {
             'id': uniqueId + 1,
             'date': date,
-            'city': city,
             'description': description
         };
 
@@ -110,21 +109,6 @@ export default function CalendarNotificationForm() {
                             renderInput={(params) => <TextField {...params} />}
                         />
                     </LocalizationProvider>
-                    <CountryDropdown
-                        sx={{ minWidth: "300px" }}
-                        value={country}
-                        onChange={handleCountryChange} />
-                    <Autocomplete
-                        sx={{ minWidth: "300px" }}
-                        onInputChange={inputChange}
-                        disablePortal
-                        value={city}
-                        inputValue={city || ''}
-                        id="citySelection"
-                        options={cities}
-                        getOptionLabel={(option) => option.name}
-                        renderInput={(params) => <TextField {...params} label="City" />}
-                    />
                 </Box>
             </DialogContent>
             <DialogActions>
